@@ -11,11 +11,8 @@ btns.forEach(function(btn){
 })
 
 equals.addEventListener('click', () => {
-    console.log(screen.innerHTML)
     let val = eval(screen.innerHTML);
-    if(val > 100000000){
-        val.toFixed(2)
-    }
+    val.toFixed(7);
     screen.innerHTML = val;
     
 })
